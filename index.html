@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>✨Daily Check✨</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>✨Daily Check✨</h1>
+
+        <button onclick="cadastro.classList.remove('oculto')">
+            Adicionar Tarefa
+        </button>
+
+        <div class="button">
+
+            <ul>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="./temperatura/index.html">
+
+                        <button>
+                            Temperatura
+                        </button>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main></main>
+
+    <!-- ================= CADASTRO ================= -->
+
+    <div id="cadastro" class="modal oculto">
+
+        <div class="janela">
+
+            <h2>Adicionar Tarefa</h2>
+
+            <form id="formCad">
+
+                <label>Nome da Tarefa</label>
+
+                <input type="text" id="nome" required>
+
+                <label>Data de Início</label>
+
+                <input type="date" id="dataInicio" required>
+
+                <label>Data de Fim</label>
+
+                <input type="date" id="dataFim" required>
+
+                <label>URL da Imagem</label>
+
+                <input type="text" id="urlImagem">
+
+                <label>Descrição</label>
+
+                <textarea id="descricao" required></textarea>
+
+                <br><br>
+
+                <button type="button" onclick="cadastro.classList.add('oculto')">
+
+                    Cancelar
+
+                </button>
+
+                <button type="submit">
+
+                    Salvar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- ================= DETALHES ================= -->
+
+    <div id="detalhes" class="modal oculto">
+
+        <div class="janela">
+
+            <h2 id="tituloTarefa"></h2>
+
+            <img id="imgTarefa">
+
+            <p><b>Nome</b></p>
+
+            <input type="text" id="nomeEdit">
+
+            <p><b>Imagem (URL)</b></p>
+
+            <input type="text" id="imgEdit">
+
+            <p><b>Data de Início</b></p>
+
+            <input type="date" id="dataInicioEdit">
+
+            <p><b>Data de Fim</b></p>
+
+            <input type="date" id="dataFimEdit">
+
+            <p><b>Descrição</b></p>
+
+            <textarea id="descricaoEdit"></textarea>
+
+            <br><br>
+
+            <button onclick="salvarEdicao()">
+
+                Salvar
+
+            </button>
+
+            <button onclick="excluirTarefaAtual()">
+
+                Excluir
+
+            </button>
+
+            <button onclick="detalhes.classList.add('oculto')">
+
+                Fechar
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

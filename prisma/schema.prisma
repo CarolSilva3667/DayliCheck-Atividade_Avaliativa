@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model tarefas{
+  id         Int      @id @default(autoincrement())
+  nome       String
+  dataInicio String
+  dataFim    String
+  descricao  String
+}
