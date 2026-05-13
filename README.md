@@ -1,6 +1,6 @@
 # Dayli_Check-Atividade_Avaliativa
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 O **Daily Check** é uma aplicação web desenvolvida para auxiliar na organização das tarefas do dia a dia de forma prática e intuitiva. O sistema permite adicionar, editar, excluir e acompanhar tarefas, além de oferecer funcionalidades extras como previsão do tempo e controle de temperatura.
 O objetivo do projeto é proporcionar uma experiência simples, moderna e funcional para gerenciamento de atividades.
